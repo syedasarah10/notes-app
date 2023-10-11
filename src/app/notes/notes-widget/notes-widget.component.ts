@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-notes-widget',
@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 
 export class NotesWidgetComponent {
 
+  @Input() noteText: string = '';
+  @Input() noteTitle: string = '';
 }

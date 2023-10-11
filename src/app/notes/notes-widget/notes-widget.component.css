@@ -1,0 +1,11 @@
+mat-card-content {
+    height: 95px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 205px;
+    overflow: hidden;
+}
+
+.mat-mdc-card{
+    margin-top: 48px;
+}

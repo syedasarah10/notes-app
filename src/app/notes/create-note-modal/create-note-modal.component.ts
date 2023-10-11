@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-note-modal.component.css']
 })
 export class CreateNoteModalComponent {
-
+  onSaveClick(save : any){
+    console.log(save);
+  }
 }

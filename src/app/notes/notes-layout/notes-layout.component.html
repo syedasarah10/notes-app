@@ -1,5 +1,8 @@
-<mat-grid-list cols="5" rowHeight="2:1">
-  <mat-grid-tile>
+<mat-grid-list cols="4" rowHeight="2:1">
+  <mat-grid-tile *ngFor = 'let note of notesData'>
+    <app-notes-widget noteText={{note.text}} noteTitle={{note.title}}></app-notes-widget>
+  </mat-grid-tile>
+  <!-- <mat-grid-tile>
     <app-notes-widget></app-notes-widget>
   </mat-grid-tile>
   <mat-grid-tile>
@@ -7,10 +10,7 @@
   </mat-grid-tile>
   <mat-grid-tile>
     <app-notes-widget></app-notes-widget>
-  </mat-grid-tile>
-  <mat-grid-tile>
-    <app-notes-widget></app-notes-widget>
-  </mat-grid-tile>
+  </mat-grid-tile> -->
   <mat-grid-tile>
     <mat-card>
         <button mat-button (click)="openDialog()">+ Add Card</button>
