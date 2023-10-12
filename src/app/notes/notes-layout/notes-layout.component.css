@@ -2,3 +2,12 @@
     display: flex;
     justify-content: space-around;
 }
+app-notes-widget {
+    width: 240px;
+    height: auto;
+}
+ 
+mat-card {
+    height: 100%;
+    width: 100%;
+}

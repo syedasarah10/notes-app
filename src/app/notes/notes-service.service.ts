@@ -16,4 +16,13 @@ export class NotesServiceService {
   getAllData(): Observable<any> {
     return this.http.get(`${this.baseURL}`)
   }
+
+  // onSaveClick(postData: Object) :Observable<any>{
+  //   let endPoints = "/note"
+  //    this.http.post(this.baseURL + endPoints, postData).subscribe((data: any) => {
+  //     console.log(data);
+      
+  //   });
+  // }
+  
 }
